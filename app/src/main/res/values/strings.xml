@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CardGame</string>
+    <string name="shu">Шу Куренай</string>
+    <string name="pashke">Пашке Учиха</string>
+    <string name="akemi">Акеми Учиха</string>
+    <string name="rike">Райк Эвесен</string>
+    <string name="hiruko">Хируко</string>
+    <string name="kentaru">Кентару Учиха</string>
+    <string name="iketani">Икетани Хьюга</string>
+    <string name="keiko">Кеико Гисе</string>
+    <string name="akito">Акито Узумаки</string>
+    <string name="ryu">Рюу Узумаки</string>
+    <string name="kitsu">Кицу Хозуки</string>
+    <string name="teeru">Тееру Ацуса</string>
+    <string name="benkei">Бенкей Ацуса</string>
+    <string name="bar">Бар</string>
+    <string name="tsunami">Тсунами Хьюга</string>
+    <string name="himera">Химера</string>
+    <string name="kingjerry">Король Мышей</string>
+    <string name="ren">Рен Учиха</string>
+    <string name="ambition">Амбициозный</string>
+    <string name="true_medik">Я медик, честно!</string>
+    <string name="ivata">Кин Ивата</string>
+    <string name="turtle">Построение: Черепаха</string>
+    <string name="hymn_iva">Гимн Ивагакуре</string>
+    <string name="adk">(Боец Дальнего Боя)</string>
+    <string name="support">(Медик)</string>
+    <string name="tank">(Боец Ближнего Боя)</string>
+    <string name="step">Ход: </string>
+
+</resources>
