@@ -25,6 +25,7 @@ public class ChooseFraction extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.choose_fraction);
+
         LinearLayout konoha = findViewById(R.id.konoha);
         LinearLayout iva = findViewById(R.id.iva);
         LinearLayout morekonoha = findViewById(R.id.morekonoha);

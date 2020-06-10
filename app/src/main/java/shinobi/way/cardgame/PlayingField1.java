@@ -23,7 +23,6 @@ public class PlayingField1 extends Activity implements View.OnClickListener, Vie
     private long backPressedTime;
     long startTime;
     private Toast backToast;
-    public int countp1 = 0;
     public int count = 0;
     public int sumstep1 = 0;
     public int battlepoint1 = 0;
@@ -126,6 +125,12 @@ public class PlayingField1 extends Activity implements View.OnClickListener, Vie
                 sumturn1.setText("Ход: " + sumstep1);
                 endturn1.setEnabled(false);
                 endturn2.setEnabled(true);
+                imgcard1.setEnabled(false);
+                imgcard2.setEnabled(false);
+                imgcard3.setEnabled(false);
+                imgcard4.setEnabled(false);
+                imgcard5.setEnabled(false);
+                imgcard6.setEnabled(false);
                 imgcard7.setEnabled(true);
                 imgcard8.setEnabled(true);
                 imgcard9.setEnabled(true);
@@ -150,10 +155,22 @@ public class PlayingField1 extends Activity implements View.OnClickListener, Vie
                 imgcard4.setEnabled(true);
                 imgcard5.setEnabled(true);
                 imgcard6.setEnabled(true);
+                imgcard7.setEnabled(false);
+                imgcard8.setEnabled(false);
+                imgcard9.setEnabled(false);
+                imgcard10.setEnabled(false);
+                imgcard11.setEnabled(false);
+                imgcard12.setEnabled(false);
             }
         });
 
-        if (sumstep1 == sumstep2){
+        if (sumstep1 == 0){
+            imgcard1.setEnabled(true);
+            imgcard2.setEnabled(true);
+            imgcard3.setEnabled(true);
+            imgcard4.setEnabled(true);
+            imgcard5.setEnabled(true);
+            imgcard6.setEnabled(true);
             imgcard7.setEnabled(false);
             imgcard8.setEnabled(false);
             imgcard9.setEnabled(false);
@@ -161,345 +178,37 @@ public class PlayingField1 extends Activity implements View.OnClickListener, Vie
             imgcard11.setEnabled(false);
             imgcard12.setEnabled(false);
             endturn2.setEnabled(false);
-        } else if (sumstep1 > sumstep2){
-            imgcard1.setEnabled(false);
-            imgcard2.setEnabled(false);
-            imgcard3.setEnabled(false);
-            imgcard4.setEnabled(false);
-            imgcard5.setEnabled(false);
-            imgcard6.setEnabled(false);
-            endturn1.setEnabled(false);
         }
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.imgcard1:
-                final LinearLayout p1 = findViewById(R.id.p1);
-                final LinearLayout p2 = findViewById(R.id.p2);
-                final LinearLayout p3 = findViewById(R.id.p3);
-                final LinearLayout p4 = findViewById(R.id.p4);
-                final LinearLayout p5 = findViewById(R.id.p5);
-                final LinearLayout p6 = findViewById(R.id.p6);
-                final LinearLayout f1 = findViewById(R.id.f1);
-                final LinearLayout f2 = findViewById(R.id.f2);
-                final LinearLayout ph = findViewById(R.id.ph);
-                if (count < 1){
-                    count++;
-                } else count = 0;
-                if (count == 1) {
-                    p1.setBackgroundResource(R.drawable.red_button_background1);
-                    p2.setBackgroundResource(R.drawable.red_button_background1);
-                    p3.setBackgroundResource(R.drawable.red_button_background1);
-                    p4.setEnabled(false);
-                    p5.setEnabled(false);
-                    p6.setEnabled(false);
-                    ph.setEnabled(false);
-                    f1.setEnabled(false);
-                    f2.setEnabled(false);
-                    if (countp1 == 3){
-                        p1.setEnabled(false);
-                    } else if(countp1 == 0){
-                        p1.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard1 = findViewById(R.id.imgcard1);
-                                imgcard1.setImageAlpha(1);
-                                ImageView p1card4 = findViewById(R.id.p1card4);
-                                p1card4.setImageResource(R.drawable.shu);
-                                p1.setBackgroundResource(R.drawable.white_button_background1);
-                                p2.setBackgroundResource(R.drawable.white_button_background1);
-                                p3.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard1 = battlefield.findViewById(R.id.battlecard1);
-                                battlecard1.setImageResource(R.drawable.shu);
-                                battlefield.show();
-                                p4.setEnabled(true);
-                                p5.setEnabled(true);
-                                p6.setEnabled(true);
-                                ph.setEnabled(true);
-                                f1.setEnabled(true);
-                                f2.setEnabled(true);
-                                countp1++;
-                                count = 0;
-                                imgcard1.setClickable(false);
-                            }
-                        });
-                    } else if (countp1 == 1){
-                        p1.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard1 = findViewById(R.id.imgcard1);
-                                imgcard1.setImageAlpha(1);
-                                ImageView p1card5 = findViewById(R.id.p1card5);
-                                p1card5.setImageResource(R.drawable.shu);
-                                p1.setBackgroundResource(R.drawable.white_button_background1);
-                                p2.setBackgroundResource(R.drawable.white_button_background1);
-                                p3.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard2 = battlefield.findViewById(R.id.battlecard2);
-                                battlecard2.setImageResource(R.drawable.shu);
-                                battlefield.show();
-                                p4.setEnabled(true);
-                                p5.setEnabled(true);
-                                p6.setEnabled(true);
-                                ph.setEnabled(true);
-                                f1.setEnabled(true);
-                                f2.setEnabled(true);
-                                countp1++;
-                                count = 0;
-                                imgcard1.setClickable(false);
-                            }
-                        });
-                    } else{
-                        p1.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard1 = findViewById(R.id.imgcard1);
-                                imgcard1.setImageAlpha(1);
-                                ImageView p1card6 = findViewById(R.id.p1card6);
-                                p1card6.setImageResource(R.drawable.shu);
-                                p4.setEnabled(true);
-                                p5.setEnabled(true);
-                                p6.setEnabled(true);
-                                ph.setEnabled(true);
-                                f1.setEnabled(true);
-                                f2.setEnabled(true);
-                                p1.setBackgroundResource(R.drawable.white_button_background1);
-                                p2.setBackgroundResource(R.drawable.white_button_background1);
-                                p3.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard3 = battlefield.findViewById(R.id.battlecard3);
-                                battlecard3.setImageResource(R.drawable.shu);
-                                battlefield.show();
-                                countp1++;
-                                count = 0;
-                                imgcard1.setClickable(false);
-                            }
-                        });
-                    }
-
-                }else{
-                    p1.setBackgroundResource(R.drawable.white_button_background1);
-                    p2.setBackgroundResource(R.drawable.white_button_background1);
-                    p3.setBackgroundResource(R.drawable.white_button_background1);
-                    p4.setEnabled(true);
-                    p5.setEnabled(true);
-                    p6.setEnabled(true);
-                    ph.setEnabled(true);
-                    f1.setEnabled(true);
-                    f2.setEnabled(true);
-                }
-                break;
-            case R.id.imgcard2:
-                final LinearLayout p01 = findViewById(R.id.p1);
-                final LinearLayout p02 = findViewById(R.id.p2);
-                final LinearLayout p03 = findViewById(R.id.p3);
-                final LinearLayout p04 = findViewById(R.id.p4);
-                final LinearLayout p05 = findViewById(R.id.p5);
-                final LinearLayout p06 = findViewById(R.id.p6);
-                final LinearLayout f01 = findViewById(R.id.f1);
-                final LinearLayout f02 = findViewById(R.id.f2);
-                final LinearLayout ph0 = findViewById(R.id.ph);
-                if (count < 1){
-                    count++;
-                } else count = 0;
-                if (count == 1) {
-                    p01.setBackgroundResource(R.drawable.red_button_background1);
-                    p02.setBackgroundResource(R.drawable.red_button_background1);
-                    p03.setBackgroundResource(R.drawable.red_button_background1);
-                    p04.setEnabled(false);
-                    p05.setEnabled(false);
-                    p06.setEnabled(false);
-                    ph0.setEnabled(false);
-                    f01.setEnabled(false);
-                    f02.setEnabled(false);
-                    if (countp1 == 3){
-                        p01.setEnabled(false);
-                    } else if(countp1 == 0){
-                        p01.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard2 = findViewById(R.id.imgcard2);
-                                imgcard2.setImageAlpha(1);
-                                ImageView p1card4 = findViewById(R.id.p1card4);
-                                p1card4.setImageResource(R.drawable.pashke);
-                                p01.setBackgroundResource(R.drawable.white_button_background1);
-                                p02.setBackgroundResource(R.drawable.white_button_background1);
-                                p03.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard1 = battlefield.findViewById(R.id.battlecard1);
-                                battlecard1.setImageResource(R.drawable.pashke);
-                                battlefield.show();
-                                p04.setEnabled(true);
-                                p05.setEnabled(true);
-                                p06.setEnabled(true);
-                                ph0.setEnabled(true);
-                                f01.setEnabled(true);
-                                f02.setEnabled(true);
-                                countp1++;
-                                count = 0;
-                                imgcard2.setClickable(false);
-                            }
-                        });
-                    } else if (countp1 == 1){
-                        p01.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard2 = findViewById(R.id.imgcard2);
-                                imgcard2.setImageAlpha(1);
-                                ImageView p1card5 = findViewById(R.id.p1card5);
-                                p1card5.setImageResource(R.drawable.pashke);
-                                p01.setBackgroundResource(R.drawable.white_button_background1);
-                                p02.setBackgroundResource(R.drawable.white_button_background1);
-                                p03.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard2 = battlefield.findViewById(R.id.battlecard2);
-                                battlecard2.setImageResource(R.drawable.pashke);
-                                battlefield.show();
-                                p04.setEnabled(true);
-                                p05.setEnabled(true);
-                                p06.setEnabled(true);
-                                ph0.setEnabled(true);
-                                f01.setEnabled(true);
-                                f02.setEnabled(true);
-                                countp1++;
-                                count = 0;
-                                imgcard2.setClickable(false);
-                            }
-                        });
-                    } else{
-                        p01.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                ImageView imgcard2 = findViewById(R.id.imgcard2);
-                                imgcard2.setImageAlpha(1);
-                                ImageView p1card6 = findViewById(R.id.p1card6);
-                                p1card6.setImageResource(R.drawable.pashke);
-                                p04.setEnabled(true);
-                                p05.setEnabled(true);
-                                p06.setEnabled(true);
-                                ph0.setEnabled(true);
-                                f01.setEnabled(true);
-                                f02.setEnabled(true);
-                                p01.setBackgroundResource(R.drawable.white_button_background1);
-                                p02.setBackgroundResource(R.drawable.white_button_background1);
-                                p03.setBackgroundResource(R.drawable.white_button_background1);
-                                battlefield = new Dialog(PlayingField1.this);
-                                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                                battlefield.setContentView(R.layout.battle_field);
-                                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                                battlefield.setCancelable(false);
-                                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        battlefield.dismiss();
-                                    }
-                                });
-                                ImageView battlecard3 = battlefield.findViewById(R.id.battlecard3);
-                                battlecard3.setImageResource(R.drawable.pashke);
-                                battlefield.show();
-                                countp1++;
-                                count = 0;
-                                imgcard2.setClickable(false);
-                            }
-                        });
-                    }
-
-                }else{
-                    p01.setBackgroundResource(R.drawable.white_button_background1);
-                    p02.setBackgroundResource(R.drawable.white_button_background1);
-                    p03.setBackgroundResource(R.drawable.white_button_background1);
-                    p04.setEnabled(true);
-                    p05.setEnabled(true);
-                    p06.setEnabled(true);
-                    ph0.setEnabled(true);
-                    f01.setEnabled(true);
-                    f02.setEnabled(true);
-                }
-                break;
-            case R.id.p1:
-            case R.id.p2:
-            case R.id.p3:
-            case R.id.p4:
-            case R.id.p5:
-            case R.id.p6:
-            case R.id.f1:
-            case R.id.f2:
-            case R.id.ph:
-                battlefield = new Dialog(this);
-                battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                battlefield.setContentView(R.layout.battle_field);
-                battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                battlefield.setCancelable(false);
-                TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
-                exitdialog2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        battlefield.dismiss();
-                    }
-                });
-                battlefield.show();
-                break;
+            switch (v.getId()) {
+                case R.id.p1:
+                case R.id.p2:
+                case R.id.p3:
+                case R.id.p4:
+                case R.id.p5:
+                case R.id.p6:
+                case R.id.f1:
+                case R.id.f2:
+                case R.id.ph:
+                    battlefield = new Dialog(this);
+                    battlefield.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    battlefield.setContentView(R.layout.battle_field);
+                    battlefield.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    battlefield.setCancelable(false);
+                    TextView exitdialog2 = battlefield.findViewById(R.id.exit_dialog2);
+                    exitdialog2.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            battlefield.dismiss();
+                        }
+                    });
+                    battlefield.show();
+                    break;
+            }
         }
-    }
 
 
     @Override
@@ -549,6 +258,7 @@ public class PlayingField1 extends Activity implements View.OnClickListener, Vie
                                     cardinfo.dismiss();
                                 }
                             });
+
                             cardinfo.show();
 
                         }break;

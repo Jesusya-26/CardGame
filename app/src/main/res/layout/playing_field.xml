@@ -76,7 +76,7 @@
                         android:background="@drawable/white_button_background1"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Конец Хода"
+                        android:text="@string/endturn"
                         android:textSize="16sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -301,7 +301,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 4"
+                                    android:text="@string/p4"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -442,7 +442,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 5"
+                                    android:text="@string/p5"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -583,7 +583,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 6"
+                                    android:text="@string/p6"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -732,7 +732,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Завод 1"
+                                    android:text="@string/f1"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -873,7 +873,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал Хорана"
+                                    android:text="@string/ph"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -1015,7 +1015,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Завод 2"
+                                    android:text="@string/f2"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -1165,7 +1165,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 1"
+                                    android:text="@string/p1"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -1307,7 +1307,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 2"
+                                    android:text="@string/p2"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -1448,7 +1448,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:gravity="center"
-                                    android:text="Перевал 3"
+                                    android:text="@string/p3"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
@@ -1663,7 +1663,7 @@
                         android:background="@drawable/white_button_background1"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Конец Хода"
+                        android:text="@string/endturn"
                         android:textSize="16sp" />
                 </LinearLayout>
 
