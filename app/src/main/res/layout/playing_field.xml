@@ -19,67 +19,75 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="25dp"
             android:layout_weight="2.5"
             android:orientation="horizontal">
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:background="@drawable/white_button_background1"
-                android:orientation="vertical">
+                android:layout_weight="1.5">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/battlepoints2"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
+                        android:layout_weight="2"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/sumcard2"
+                        <TextView
+                            android:id="@+id/battlepoints2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/sumcard2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/sumturn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
+                        android:layout_weight="2"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/sumturn2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
-
+                        <Button
+                            android:id="@+id/endturn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_button_background1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/endturn"
+                            android:textSize="16sp" />
+                    </LinearLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/endturn2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/white_button_background1"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/endturn"
-                        android:textSize="16sp" />
-                </LinearLayout>
-            </LinearLayout>
+            </ScrollView>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -99,6 +107,13 @@
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/imgcard7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
+
                         <TextView
                             android:id="@+id/namecard7"
                             android:layout_width="match_parent"
@@ -107,14 +122,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard7"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -123,6 +133,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgcard8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
 
                         <TextView
                             android:id="@+id/namecard8"
@@ -132,14 +149,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard8"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -147,6 +159,13 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgcard9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
 
                         <TextView
                             android:id="@+id/namecard9"
@@ -156,14 +175,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard9"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -172,6 +186,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgcard10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
 
                         <TextView
                             android:id="@+id/namecard10"
@@ -181,14 +202,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard10"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -197,6 +213,13 @@
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgcard11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
 
                         <TextView
                             android:id="@+id/namecard11"
@@ -206,14 +229,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard11"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -223,6 +241,13 @@
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/imgcard12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="5dp" />
+
                         <TextView
                             android:id="@+id/namecard12"
                             android:layout_width="match_parent"
@@ -231,14 +256,9 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/imgcard12"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:padding="5dp" />
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
@@ -716,7 +736,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
@@ -856,7 +881,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_margin="20dp"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
@@ -997,7 +1022,10 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
@@ -1237,7 +1265,6 @@
                                         android:id="@+id/p1card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1252,7 +1279,6 @@
                                         android:id="@+id/p1card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1267,7 +1293,6 @@
                                         android:id="@+id/p1card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1567,13 +1592,12 @@
             android:layout_height="match_parent"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
-            android:layout_marginBottom="10dp"
             android:layout_weight="2.5"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1.5"
                 android:background="@drawable/white_button_background1"
                 android:orientation="horizontal">
@@ -1618,6 +1642,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1643,6 +1668,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1668,6 +1694,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1693,6 +1720,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1717,6 +1745,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1742,6 +1771,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1754,66 +1784,75 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:background="@drawable/white_button_background1"
-                android:orientation="vertical">
+                android:layout_weight="1.5">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
                     android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/endturn1"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:background="@drawable/white_button_background1"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/endturn"
-                        android:textSize="16sp" />
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/endturn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/white_button_background1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/endturn"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/white_button_background1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sumturn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/sumcard1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/battlepoints1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:paddingStart="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@drawable/white_button_background1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/sumturn1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/sumcard1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/battlepoints1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="start"
-                        android:paddingStart="5dp"
-                        android:textSize="18sp" />
-
-                </LinearLayout>
-
-            </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
     </LinearLayout>

@@ -38,5 +38,8 @@
     <string name="b1">Мост 1</string>
     <string name="b2">Мост 2</string>
     <string name="full"> заполнен!</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="doubt">Вы уверены, что хотите\nпереместить карту сюда?</string>
 
 </resources>
