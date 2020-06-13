@@ -35,8 +35,8 @@
     <string name="p5">Перевал 5</string>
     <string name="p6">Перевал 6</string>
     <string name="ph">Перевал Хорана</string>
-    <string name="f1">Завод 1</string>
-    <string name="f2">Завод 2</string>
+    <string name="b1">Мост 1</string>
+    <string name="b2">Мост 2</string>
     <string name="full"> заполнен!</string>
 
 </resources>

@@ -18,8 +18,10 @@
             android:id="@+id/secondhand"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:background="@drawable/hand"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="2.5"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -33,7 +35,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
                     <TextView
@@ -66,7 +67,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
                     <Button
@@ -97,7 +97,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard7"
@@ -112,7 +122,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard8"
@@ -126,8 +146,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard9"
@@ -142,7 +171,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard10"
@@ -157,7 +196,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard11"
@@ -172,7 +221,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard12"
@@ -201,7 +260,7 @@
                         android:id="@+id/cardback2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/card_back" />
+                        android:src="@drawable/ivacardback" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -227,7 +286,6 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/p4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -238,6 +296,72 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p4card4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p4card5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p4card6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/p4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p4"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -290,72 +414,6 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/placename4"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p4"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p4card4"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p4card5"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p4card6"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-                            </LinearLayout>
-
                         </LinearLayout>
 
                     </LinearLayout>
@@ -368,7 +426,6 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/p5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -379,72 +436,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p5card1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p5card2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p5card3"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/placename5"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p5"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -497,29 +488,20 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
 
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/p6"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/white_button_background1"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/p5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p5"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -534,7 +516,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p6card1"
+                                        android:id="@+id/p5card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -549,7 +531,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p6card2"
+                                        android:id="@+id/p5card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -564,7 +546,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p6card3"
+                                        android:id="@+id/p5card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -572,20 +554,28 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/placename6"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p6"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_button_background1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -638,6 +628,72 @@
                                 </LinearLayout>
                             </LinearLayout>
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/p6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p6"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p6card1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p6card2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p6card3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -658,7 +714,6 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/f1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -669,6 +724,72 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f1card4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f1card5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f1card6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/b1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/b1"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -721,72 +842,6 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/placename7"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/f1"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/f1card4"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/f1card5"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/f1card6"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-                            </LinearLayout>
-
                         </LinearLayout>
 
                     </LinearLayout>
@@ -799,7 +854,6 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/ph"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -810,72 +864,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/phcard1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/phcard2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/phcard3"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/placename8"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/ph"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -928,30 +916,20 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
 
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/f2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/white_button_background1"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/ph"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/ph"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -966,7 +944,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card1"
+                                        android:id="@+id/phcard1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -981,7 +959,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card2"
+                                        android:id="@+id/phcard2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -996,7 +974,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card3"
+                                        android:id="@+id/phcard3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1004,20 +982,29 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/placename9"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/f2"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_button_background1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1062,7 +1049,73 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f3card6"
+                                        android:id="@+id/f2card6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/b2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/b2"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f2card1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f2card2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/f3card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1091,7 +1144,6 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/p1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -1102,72 +1154,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1.5">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p1card1"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p1card2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/white_button_background1"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:id="@+id/p1card3"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="1"
-                                        android:padding="3dp" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:id="@+id/placename1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p1"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1220,30 +1206,20 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
 
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/p2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/white_button_background1"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/p1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p1"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1258,7 +1234,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p2card1"
+                                        android:id="@+id/p1card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1273,7 +1249,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p2card2"
+                                        android:id="@+id/p1card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1288,7 +1264,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p2card3"
+                                        android:id="@+id/p1card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1296,20 +1272,29 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/placename2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p2"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_button_background1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1362,29 +1347,20 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                        </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
 
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:id="@+id/p3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/white_button_background1"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/p2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p2"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1399,7 +1375,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p3card1"
+                                        android:id="@+id/p2card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1414,7 +1390,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p3card2"
+                                        android:id="@+id/p2card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1429,7 +1405,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/p3card3"
+                                        android:id="@+id/p2card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -1437,20 +1413,28 @@
                                 </LinearLayout>
                             </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
+                        </LinearLayout>
 
-                                <TextView
-                                    android:id="@+id/placename3"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:gravity="center"
-                                    android:text="@string/p3"
-                                    android:textColor="#FFFFFF" />
-                            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/white_button_background1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1503,6 +1487,72 @@
                                 </LinearLayout>
                             </LinearLayout>
 
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/p3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="@string/p3"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p3card1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p3card2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/white_button_background1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/p3card3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:padding="3dp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -1515,8 +1565,10 @@
             android:id="@+id/firsthand"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:background="@drawable/hand"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2.5"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -1536,7 +1588,7 @@
                         android:id="@+id/cardback1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/card_back" />
+                        android:src="@drawable/konohacardback" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -1556,7 +1608,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard1"
@@ -1571,7 +1633,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard2"
@@ -1586,7 +1658,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard3"
@@ -1601,7 +1683,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard4"
@@ -1615,7 +1707,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard5"
@@ -1630,7 +1732,17 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/white_button_background1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namecard6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5"
+                            android:gravity="center|top"
+                            android:padding="5dp"
+                            android:textColor="#FFFFFF"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard6"
