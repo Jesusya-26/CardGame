@@ -7,6 +7,7 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/container2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -28,7 +29,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
-                    android:background="@drawable/black_button_background"
+                    android:background="@drawable/press_back1"
                     android:padding="10dp"
                     android:text="Назад"
                     android:textColor="#000"

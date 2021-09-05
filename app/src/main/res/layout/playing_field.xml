@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/playing_field">
+    android:background="@drawable/playing_field"
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -19,26 +18,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="25dp"
+            android:layout_marginBottom="7dp"
             android:layout_weight="2.5"
             android:orientation="horizontal">
 
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5">
+                android:layout_weight="1.5"
+                android:background="@drawable/white_button_background1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
-                    android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:orientation="vertical">
 
                         <TextView
@@ -73,7 +72,6 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
                         android:orientation="vertical">
 
                         <Button
@@ -86,6 +84,7 @@
                             android:text="@string/endturn"
                             android:textSize="16sp" />
                     </LinearLayout>
+
                 </LinearLayout>
             </ScrollView>
 
@@ -101,6 +100,7 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:id="@+id/card7"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -122,12 +122,13 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -149,12 +150,13 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -175,12 +177,13 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -202,12 +205,13 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card11"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -229,12 +233,13 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card12"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -256,7 +261,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -289,7 +294,7 @@
             android:id="@+id/field"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="1.1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -318,6 +323,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p4line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -333,7 +339,6 @@
                                         android:id="@+id/p4card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -348,7 +353,6 @@
                                         android:id="@+id/p4card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -363,7 +367,6 @@
                                         android:id="@+id/p4card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -378,12 +381,14 @@
                                     android:id="@+id/p4"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p4"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p4line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -399,7 +404,6 @@
                                         android:id="@+id/p4card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -414,7 +418,6 @@
                                         android:id="@+id/p4card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -429,7 +432,6 @@
                                         android:id="@+id/p4card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -458,6 +460,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p5line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -473,7 +476,6 @@
                                         android:id="@+id/p5card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -488,7 +490,6 @@
                                         android:id="@+id/p5card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -503,7 +504,6 @@
                                         android:id="@+id/p5card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -518,12 +518,14 @@
                                     android:id="@+id/p5"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p5"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p5line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -539,7 +541,6 @@
                                         android:id="@+id/p5card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -554,7 +555,6 @@
                                         android:id="@+id/p5card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -569,7 +569,6 @@
                                         android:id="@+id/p5card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -598,6 +597,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p6line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -613,7 +613,6 @@
                                         android:id="@+id/p6card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -628,7 +627,6 @@
                                         android:id="@+id/p6card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -643,7 +641,6 @@
                                         android:id="@+id/p6card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -658,12 +655,14 @@
                                     android:id="@+id/p6"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p6"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p6line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -679,7 +678,6 @@
                                         android:id="@+id/p6card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -694,7 +692,6 @@
                                         android:id="@+id/p6card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -709,7 +706,6 @@
                                         android:id="@+id/p6card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -751,6 +747,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/b1line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -763,10 +760,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card4"
+                                        android:id="@+id/b1card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -778,10 +774,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card5"
+                                        android:id="@+id/b1card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -793,10 +788,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card6"
+                                        android:id="@+id/b1card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -811,12 +805,14 @@
                                     android:id="@+id/b1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/b1"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/b1line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -829,7 +825,7 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card1"
+                                        android:id="@+id/b1card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_weight="1"
@@ -844,10 +840,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card2"
+                                        android:id="@+id/b1card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -859,10 +854,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f1card3"
+                                        android:id="@+id/b1card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -888,9 +882,11 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:background="@drawable/white_button_background1"
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/phline2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -906,7 +902,6 @@
                                         android:id="@+id/phcard4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -921,7 +916,6 @@
                                         android:id="@+id/phcard5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -936,7 +930,6 @@
                                         android:id="@+id/phcard6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -957,6 +950,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/phline1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -972,7 +966,6 @@
                                         android:id="@+id/phcard1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -987,7 +980,6 @@
                                         android:id="@+id/phcard2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1002,7 +994,6 @@
                                         android:id="@+id/phcard3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1035,6 +1026,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/b2line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1047,10 +1039,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card4"
+                                        android:id="@+id/b2card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1062,10 +1053,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card5"
+                                        android:id="@+id/b2card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1077,10 +1067,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card6"
+                                        android:id="@+id/b2card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1095,12 +1084,14 @@
                                     android:id="@+id/b2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/b2"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/b2line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1113,10 +1104,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card1"
+                                        android:id="@+id/b2card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1128,10 +1118,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f2card2"
+                                        android:id="@+id/b2card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1143,10 +1132,9 @@
                                     android:orientation="horizontal">
 
                                     <ImageView
-                                        android:id="@+id/f3card3"
+                                        android:id="@+id/b2card3"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1184,6 +1172,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p1line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1199,7 +1188,6 @@
                                         android:id="@+id/p1card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1214,7 +1202,6 @@
                                         android:id="@+id/p1card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1229,7 +1216,6 @@
                                         android:id="@+id/p1card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1244,12 +1230,14 @@
                                     android:id="@+id/p1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p1"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p1line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1322,6 +1310,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p2line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1337,7 +1326,6 @@
                                         android:id="@+id/p2card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1352,7 +1340,6 @@
                                         android:id="@+id/p2card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1367,7 +1354,6 @@
                                         android:id="@+id/p2card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1382,12 +1368,14 @@
                                     android:id="@+id/p2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p2"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p2line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1403,7 +1391,6 @@
                                         android:id="@+id/p2card1"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1418,7 +1405,6 @@
                                         android:id="@+id/p2card2"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1462,6 +1448,7 @@
                             android:orientation="vertical">
 
                             <LinearLayout
+                                android:id="@+id/p3line2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1477,7 +1464,6 @@
                                         android:id="@+id/p3card4"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1492,7 +1478,6 @@
                                         android:id="@+id/p3card5"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
 
@@ -1507,7 +1492,6 @@
                                         android:id="@+id/p3card6"
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:layout_weight="1"
                                         android:padding="3dp" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -1522,12 +1506,14 @@
                                     android:id="@+id/p3"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:background="@drawable/white_button_background1"
                                     android:gravity="center"
                                     android:text="@string/p3"
                                     android:textColor="#FFFFFF" />
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/p3line1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.5">
@@ -1591,7 +1577,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="25dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="2.5"
             android:orientation="horizontal">
 
@@ -1628,6 +1616,7 @@
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:id="@+id/card1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1642,7 +1631,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1654,6 +1643,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1668,7 +1658,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1680,6 +1670,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1694,7 +1685,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1706,6 +1697,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1720,17 +1712,19 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
                             android:id="@+id/imgcard4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            android:padding="5dp" />
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1745,7 +1739,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1757,6 +1751,7 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/card6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -1771,7 +1766,7 @@
                             android:gravity="center|top"
                             android:padding="5dp"
                             android:textColor="#FFFFFF"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:textStyle="bold" />
 
                         <ImageView
@@ -1787,20 +1782,17 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5">
+                android:layout_weight="1.5"
+                android:background="@drawable/white_button_background1">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1.5"
-                    android:background="@drawable/white_button_background1"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:background="@drawable/white_button_background1"
                         android:orientation="vertical">
 
                         <Button
@@ -1816,9 +1808,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:background="@drawable/white_button_background1"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
 
                         <TextView

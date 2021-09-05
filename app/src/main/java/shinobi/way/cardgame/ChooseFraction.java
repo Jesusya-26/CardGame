@@ -1,7 +1,6 @@
 package shinobi.way.cardgame;
 
 
-import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,9 +14,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 
-public class ChooseFraction extends Activity implements OnClickListener {
+public class ChooseFraction extends AppCompatActivity implements OnClickListener {
 
     Dialog fractioninfo;
 
@@ -43,13 +43,9 @@ public class ChooseFraction extends Activity implements OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.konoha:
+            case R.id.iva:
                 Intent intent = new Intent(ChooseFraction.this, PlayingField1.class);
                 startActivity(intent);
-                finish();
-                break;
-            case R.id.iva:
-                Intent intent1 = new Intent(ChooseFraction.this, PlayingField1.class);
-                startActivity(intent1);
                 finish();
                 break;
             case R.id.morekonoha:

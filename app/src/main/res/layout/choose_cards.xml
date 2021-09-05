@@ -22,7 +22,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="end"
-            android:background="@drawable/black_button_background"
+            android:background="@drawable/press_back1"
             android:gravity="center"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
